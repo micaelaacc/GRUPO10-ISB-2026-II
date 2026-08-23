@@ -1,5 +1,6 @@
 <div align="center">
-
+<img width="1983" height="793" alt="f970fee2-3220-43cb-927a-40f1d99e0a86" src="https://github.com/user-attachments/assets/7950207d-d12c-4a2c-bf52-56ed870e47b8" />
+  
 # Bienvenidos al Repositorio del Grupo 9
 
 **Curso:** Introducción a Señales Biomédicas
