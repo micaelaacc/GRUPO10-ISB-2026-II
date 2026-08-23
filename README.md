@@ -1,6 +1,14 @@
-# GRUPOX-ISB-2026-II
+<div align="center">
 
-# Integrantes
+# Bienvenidos al Repositorio del Grupo 9
+
+**Curso:** Introducción a Señales Biomédicas
+**Ciclo:** 2026-II
+
+</div>
+
+
+## Nuestro equipo
 
 - Micaela Alejandra Caro Cordova
 - Franccesca Jazmín Solís Díaz
