@@ -3,6 +3,7 @@
 # Bienvenidos al Repositorio del Grupo 9
 
 **Curso:** Introducción a Señales Biomédicas
+
 **Ciclo:** 2026-II
 
 </div>
