@@ -40,8 +40,6 @@ Este repositorio ha sido creado como un espacio de trabajo colaborativo para el 
       <i>texto</i><br><br>
       ✉️ <a href="barbara.zevallos@upch.pe">barbara.zevallos@upch.pe</a>
     </td>
-    <td align="center" width="33%">
-      </td>
   </tr>
 </table>
 
