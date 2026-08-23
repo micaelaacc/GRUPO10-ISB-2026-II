@@ -40,3 +40,7 @@ Este repositorio ha sido creado como un espacio de trabajo colaborativo para el 
   </tr>
 </table>
 
+## Docentes del curso
+- Moises Stevend Meza Rodriguez
+- Jose Alonso Cáceres del Aguila
+
