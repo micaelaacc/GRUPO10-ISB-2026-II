@@ -18,25 +18,25 @@ Este repositorio ha sido creado como un espacio de trabajo colaborativo para el 
       <img src="url1" width="130px;" style="border-radius:50%;" alt="Foto"/><br>
       <b>Micaela Alejandra Caro Córdova</b><br>
       <i>texto</i><br><br>
-      ✉️ <a href="micaela.caro@upch.pe">micaela.caro@upch.pe</a>
+      <a href="micaela.caro@upch.pe">micaela.caro@upch.pe</a>
     </td>
     <td align="center" width="25%">
       <img src="url2" width="130px;" style="border-radius:50%;" alt="Foto"/><br>
       <b>Franccesca Jazmín Solís Díaz</b><br>
       <i>texto</i><br><br>
-      ✉️ <a href="franccesca.solis@upch.pe">franccesca.solis@upch.pe</a>
+      <a href="franccesca.solis@upch.pe">franccesca.solis@upch.pe</a>
     </td>
     <td align="center" width="25%">
       <img src="url3" width="130px;" style="border-radius:50%;" alt="Foto"/><br>
       <b>Jhamil Alessandro Soto Vera</b><br>
       <i>texto</i><br><br>
-      ✉️ <a href="jhamil.soto@upch.pe">jhamil.soto@upch.pe</a>
+      <a href="jhamil.soto@upch.pe">jhamil.soto@upch.pe</a>
     </td>
     <td align="center" width="25%">
       <img src="url4" width="130px;" style="border-radius:50%;" alt="Foto"/><br>
       <b>Barbara Kassy Zevallos Chavez</b><br>
       <i>texto</i><br><br>
-      ✉️ <a href="barbara.zevallos@upch.pe">barbara.zevallos@upch.pe</a>
+      <a href="barbara.zevallos@upch.pe">barbara.zevallos@upch.pe</a>
     </td>
   </tr>
 </table>
