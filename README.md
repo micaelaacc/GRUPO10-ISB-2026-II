@@ -3,7 +3,8 @@
 # Integrantes
 - Micaela Alejandra Caro Cordova
   
-  <img height="250" alt="WhatsApp Image 2026-08-22 at 10 00 45 PM" src="https://github.com/user-attachments/assets/4dc7b7ab-bbbc-4325-a193-044725ebaee8" />
+  |<img height="250" alt="WhatsApp Image 2026-08-22 at 10 00 45 PM" src="https://github.com/user-attachments/assets/4dc7b7ab-bbbc-4325-a193-044725ebaee8" />| hola|
+  
 
 - Franccesca Jazmín Solís Díaz
 - Jhamil Alessandro Soto Vera
