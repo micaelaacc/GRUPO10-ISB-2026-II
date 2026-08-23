@@ -12,33 +12,40 @@
 Este repositorio ha sido creado como un espacio de trabajo colaborativo para el curso Introducción a Señales Biomédicas, donde se recopilarán y documentarán los laboratorios, códigos, resultados y avances del proyecto desarrollados a lo largo del ciclo.
 
 ## Nuestro equipo
-
-<table>
+<table align="center">
   <tr>
-    <td align="center">
-      <img src="URL_IMAGEN_1" width="180"><br>
-      <b>Micaela Alejandra Caro Córdova</b>
-      <a href="micaela.caro@upch.pe">micaela.caro@upch.pe</a>
+    <td align="center" width="50%">
+      <img src="url1" width="130px;" style="border-radius:50%;" alt="Foto"/><br>
+      <b>Micaela Alejandra Caro Córdova</b><br>
+      <i>texto</i><br><br>
+      ✉️ <a href="micaela.caro@upch.pe">micaela.caro@upch.pe</a>
     </td>
-    <td align="center">
-      <img src="URL_IMAGEN_2" width="180"><br>
-      <b>Franccesca Jazmín Solís Díaz</b>
-      <a href="franccesca.solis@upch.pe">franccesca.solis@upch.pe</a>
+    <td align="center" width="50%">
+      <img src="url2" width="130px;" style="border-radius:50%;" alt="Foto"/><br>
+      <b>Franccesca Jazmín Solís Díaz</b><br>
+      <i>texto</i><br><br>
+      ✉️ <a href="franccesca.solis@upch.pe">franccesca.solis@upch.pe</a>
     </td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="URL_IMAGEN_3" width="180"><br>
-      <b>Jhamil Alessandro Soto Vera</b>
-      <a href="jhamil.soto@upch.pe">jhamil.soto@upch.pe</a>
+    <td align="center" width="50%">
+      <img src="url3" width="130px;" style="border-radius:50%;" alt="Foto"/><br>
+      <b>Jhamil Alessandro Soto Vera</b><br>
+      <i>texto</i><br><br>
+      ✉️ <a href="jhamil.soto@upch.pe">jhamil.soto@upch.pe</a>
     </td>
-    <td align="center">
-      <img src="URL_IMAGEN_4" width="180"><br>
-      <b>Barbara Kassy Zevallos Chavez</b>
-      <a href="barbara.zevallos@upch.pe">barbara.zevallos@upch.pe</a>
+    <td align="center" width="50">
+      <img src="url4" width="130px;" style="border-radius:50%;" alt="Foto"/><br>
+      <b>Barbara Kassy Zevallos Chavez</b><br>
+      <i>texto</i><br><br>
+      ✉️ <a href="barbara.zevallos@upch.pe">barbara.zevallos@upch.pe</a>
     </td>
+    <td align="center" width="33%">
+      </td>
   </tr>
 </table>
+
+
 
 ## Docentes del curso
 - Moises Stevend Meza Rodriguez
