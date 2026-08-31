@@ -15,7 +15,8 @@ Este repositorio ha sido creado como un espacio de trabajo colaborativo para el 
 <table align="center">
   <tr>
     <td align="center" width="25%">
-      <img src="url1" width="130px;" style="border-radius:50%;" alt="Foto"/><br>
+      <img src="<img width="1025" height="1361" alt="WhatsApp Image 2026-08-22 at 10 00 45 PM" src="https://github.com/user-attachments/assets/f6338250-5cfc-48d5-831e-4eec4c2b4f4d" />
+" width="130px;" style="border-radius:50%;" alt="Foto"/><br>
       <b>Micaela Alejandra Caro Córdova</b><br>
       <i>texto</i><br><br>
       <a href="micaela.caro@upch.pe">micaela.caro@upch.pe</a>
