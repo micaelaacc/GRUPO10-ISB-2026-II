@@ -1,5 +1,4 @@
-# Laboratorio 2
-# 🫀 Laboratorio 2 — Señales Biomédicas
+# Laboratorio 2 — Señales Biomédicas
 **Curso:** Introducción a las Señales Biomédicas (ISB)  
 **Universidad:** Universidad Peruana Cayetano Heredia (UPCH)  
 **Grupo:** Grupo 10  
@@ -8,7 +7,7 @@
 
 ---
 
-## 🎯 Resumen General
+## Resumen General
 
 En este laboratorio se estudiaron los fundamentos del procesamiento digital de señales, enfocándose principalmente en el análisis y diseño de filtros digitales. Los filtros permiten modificar selectivamente los componentes frecuenciales de una señal, por ejemplo, eliminando ruido o aislando determinadas frecuencias presentes en señales biomédicas como ECG, EEG y EMG.
 
@@ -127,3 +126,89 @@ sos = signal.butter(
     fs=250,
     output='sos'
 )
+```
+
+## 5. PhysioNet
+
+**PhysioNet** es una plataforma que permite acceder a bases de datos de señales fisiológicas reales, como ECG.
+
+Mediante la librería `wfdb` se pueden cargar registros y obtener información como:
+
+- Frecuencia de muestreo.
+- Número de muestras.
+- Canales disponibles.
+- Unidades.
+- Duración de la señal.
+
+La duración de una señal puede calcularse mediante:
+
+$$
+t = \frac{N}{f_s}
+$$
+
+donde `N` representa el número de muestras y `f_s` la frecuencia de muestreo.
+
+También puede eliminarse la **componente DC** restando la media de la señal antes de realizar determinados análisis frecuenciales.
+
+---
+
+# Laboratorios realizados
+
+## Lab 1 — Introducción a PhysioNet
+
+Se trabajó con un ECG real de la base de datos **MIT-BIH Arrhythmia Database**. Se aprendió a cargar registros mediante `wfdb`, seleccionar canales y obtener información como frecuencia de muestreo, duración y amplitud.
+
+Además, se realizaron:
+
+- Gráficas de la señal ECG.
+- Representación de muestras discretas.
+- Cálculo de estadísticas básicas.
+- Normalización de la señal.
+- Conversión del ECG a formato `.wav`.
+
+---
+
+## Lab 2 — Análisis temporal y frecuencial
+
+Se analizaron señales de la **Normal Sinus Rhythm Database** tanto en el dominio temporal como en el dominio frecuencial.
+
+Se utilizó la **FFT** para identificar las frecuencias dominantes y se compararon los espectros antes y después de eliminar la componente DC.
+
+También se aplicó la **STFT (Short-Time Fourier Transform)** para observar cómo cambia el contenido frecuencial de la señal a lo largo del tiempo.
+
+Esto permitió observar el compromiso entre **resolución temporal y resolución frecuencial** dependiendo del tamaño de la ventana utilizada.
+
+---
+
+## Lab 3 — Filtros FIR e IIR
+
+Se trabajó con una señal ECG sintética para diseñar y comparar filtros digitales.
+
+El procedimiento general fue:
+
+> **Señal → análisis temporal → FFT → identificación del ruido → selección del filtro → filtrado → validación**
+
+Se diseñaron y compararon:
+
+- Un filtro **FIR pasa-bajos**.
+- Un filtro **IIR Butterworth pasa-bajos**.
+
+Posteriormente, se añadió una interferencia de **35 Hz** al ECG y se identificó mediante la FFT. Para reducirla se aplicó un filtro Butterworth pasa-bajos.
+
+La calidad del filtrado se evaluó mediante:
+
+- **MSE:** error cuadrático medio.
+- **RMSE:** raíz del error cuadrático medio.
+- **SNR:** relación señal-ruido.
+
+Además, se verificó que el filtrado conservara características fisiológicas importantes del ECG, como la **morfología del complejo QRS** y la **frecuencia cardíaca**.
+
+---
+
+# Conclusión
+
+Los laboratorios permitieron seguir el procesamiento de una señal biomédica desde su adquisición y representación hasta su análisis y filtrado.
+
+Primero se exploraron señales reales mediante **PhysioNet**; posteriormente se utilizaron la **FFT** y la **STFT** para estudiar su contenido frecuencial; y finalmente se diseñaron filtros **FIR e IIR** para reducir componentes no deseadas.
+
+En el procesamiento de señales biomédicas, el filtrado no consiste únicamente en eliminar ruido, sino también en **preservar la información fisiológica relevante de la señal**.
