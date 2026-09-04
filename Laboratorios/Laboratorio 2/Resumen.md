@@ -1,11 +1,4 @@
-# Laboratorio 2 — Señales Biomédicas
-**Curso:** Introducción a las Señales Biomédicas (ISB)  
-**Universidad:** Universidad Peruana Cayetano Heredia (UPCH)  
-**Grupo:** Grupo 10  
-**Docente:** Ing. Alexander Valdez Portocarrero  
-**Entorno:** Python 3.x | Jupyter Notebook / Google Colab
-
----
+# Laboratorio 2: Filtros Digitales, Transformada Z y Señales Biomédicas
 
 ## Resumen General
 
