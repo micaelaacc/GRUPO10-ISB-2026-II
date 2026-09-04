@@ -24,8 +24,6 @@
 
 ## 🎯 Resumen General
 
-&gt; *"El objetivo no es aprender una función de Python de memoria, sino aprender a tomar decisiones correctas durante el procesamiento de una señal."*
-
 En este laboratorio se estudiaron los fundamentos del procesamiento digital de señales, enfocándose principalmente en el análisis y diseño de filtros digitales. Los filtros permiten modificar selectivamente los componentes frecuenciales de una señal, por ejemplo, eliminando ruido o aislando determinadas frecuencias presentes en señales biomédicas como ECG, EEG y EMG.
 
 Durante la clase se revisaron los principales tipos de filtros según su respuesta en frecuencia: pasa bajas (Low-pass), pasa altas (High-pass), pasa banda (Band-pass) y rechaza banda (Notch). También se analizaron conceptos como la función de transferencia, frecuencia de corte, magnitud y fase, utilizando Python y la librería SciPy para representar y analizar las respuestas en frecuencia.
