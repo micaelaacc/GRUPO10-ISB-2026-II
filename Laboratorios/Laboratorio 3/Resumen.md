@@ -171,4 +171,17 @@ A continuación, se presenta una de las adquisiciones correspondientes al **bíc
 
 </div>
 
+La señal presentada en la Figura 9 corresponde al registro de **EMG crudo del bíceps durante un movimiento leve**. Al inicio de la adquisición, aproximadamente entre **0 y 3 s**, la señal presenta pequeñas variaciones alrededor de un nivel basal cercano a **510 ADC**, asociado a un periodo de baja actividad muscular. A partir de aproximadamente los **3–5 s**, se observa un incremento progresivo en la amplitud de las oscilaciones de la señal, correspondiente al inicio de la activación del bíceps durante el movimiento. La actividad electromiográfica aumenta hasta alcanzar su mayor amplitud aproximadamente entre los **17 y 21 s**, donde se observan las mayores variaciones respecto al nivel basal. Posteriormente, la amplitud disminuye progresivamente entre aproximadamente **21 y 29 s**, indicando una reducción de la activación muscular. Finalmente, desde aproximadamente los **30 s**, la señal retorna a valores cercanos al nivel basal, correspondientes nuevamente a una condición de baja actividad muscular. El aumento de la amplitud de la señal durante el movimiento refleja una mayor actividad eléctrica registrada en el músculo respecto a los periodos de reposo. Debido a que se presenta la **señal cruda**, todavía se conserva el nivel de offset alrededor del cual oscila el registro y no se han aplicado etapas de filtrado, rectificación o extracción de envolvente.
+
  Los demás registros EMG, junto con los archivos `.h5` correspondientes, pueden consultarse en la carpeta [`Data_OpenSignals`](./Data_OpenSignals/) del repositorio.
+
+ ## Conclusiones
+ - Se logró realizar la **adquisición de señales electromiográficas (EMG) mediante el sistema BITalino (r)evolution**, configurando correctamente el canal A1 para EMG y utilizando una frecuencia de muestreo de **1000 Hz**.
+
+- Se registró la actividad muscular del **bíceps y tríceps** bajo tres condiciones: reposo, movimiento leve y movimiento con resistencia. La visualización de las señales permitió reconocer variaciones en la amplitud del EMG asociadas con los diferentes periodos de actividad muscular.
+
+- OpenSignals (r)evolution permitió realizar la **adquisición, visualización y almacenamiento de las señales**, generando archivos en formato `.h5` que posteriormente pudieron ser incorporados al repositorio para su análisis.
+
+- Mediante Python y la librería `h5py` fue posible acceder a la estructura de los archivos `.h5`, identificar el canal correspondiente al EMG y extraer sus muestras. Asimismo, utilizando `NumPy` y `Matplotlib` se reconstruyó el eje temporal y se representó gráficamente la **señal EMG cruda**.
+
+- La práctica permitió integrar las diferentes etapas de un proceso básico de adquisición de señales biomédicas: **colocación de electrodos, configuración del sistema de adquisición, registro de la señal, almacenamiento de los datos y posterior visualización mediante herramientas computacionales**.
