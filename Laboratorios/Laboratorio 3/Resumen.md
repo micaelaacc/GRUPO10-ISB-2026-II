@@ -185,3 +185,75 @@ La señal presentada en la Figura 9 corresponde al registro de **EMG crudo del b
 - Mediante Python y la librería `h5py` fue posible acceder a la estructura de los archivos `.h5`, identificar el canal correspondiente al EMG y extraer sus muestras. Asimismo, utilizando `NumPy` y `Matplotlib` se reconstruyó el eje temporal y se representó gráficamente la **señal EMG cruda**.
 
 - La práctica permitió integrar las diferentes etapas de un proceso básico de adquisición de señales biomédicas: **colocación de electrodos, configuración del sistema de adquisición, registro de la señal, almacenamiento de los datos y posterior visualización mediante herramientas computacionales**.
+
+## Quizz
+A continuación, se presentan y desarrollan las preguntas propuestas en la guía de laboratorio, relacionadas con los fundamentos de la adquisición y análisis de señales biomédicas mediante BITalino.
+
+**Q1. ¿Cuáles son las frecuencias significativas para adquisiciones EMG? ¿Son las
+mismas en todas las zonas del cuerpo, como el área facial?**
+
+Las señales EMG de superficie contienen información útil principalmente en el rango de 20
+a 500 Hz, concentrando la mayor parte de su energía entre 50 y 150 Hz. Este rango no es
+exactamente igual en todas las zonas del cuerpo: en músculos grandes como el bíceps o el
+tríceps, la energía se concentra en la parte más baja-media del espectro debido a fibras
+musculares más lentas y de mayor tamaño. En cambio, en músculos faciales, al ser más
+pequeños, superficiales y con fibras de contracción más rápida, la energía tiende a
+desplazarse hacia frecuencias relativamente más altas dentro de ese mismo rango general.
+
+**Q2. ¿Qué tipo de filtro es esencial al trabajar con señales EMG? ¿Por qué es
+necesario aplicarlo?**
+
+Es esencial aplicar un filtro pasa-banda (band-pass) de aproximadamente 20-500 Hz, junto
+con un filtro notch en 50/60 Hz. El filtro pasa-banda elimina componentes de muy baja
+frecuencia (artefactos de movimiento, deriva de línea base) y de muy alta frecuencia (ruido
+electrónico) que no corresponden a la actividad muscular real. El filtro notch es necesario
+porque elimina la interferencia de la red eléctrica (50 Hz en la mayoría de países, 60 Hz en
+otros), que se acopla fácilmente a los electrodos y contamina la señal. Sin estos filtros, la
+señal EMG quedaría dominada por ruido y no reflejaría fielmente la actividad muscular.
+
+**Q3. ¿Cómo difiere la amplitud en cada contracción muscular? ¿Hay diferencia según
+la ubicación corporal?**
+
+En mis registros de bíceps y tríceps se observa que la amplitud de la señal EMG aumenta
+progresivamente conforme se incrementa la fuerza de contracción: al inicio los valores
+oscilan cerca de la línea base (~500-520 ADC), y a medida que la contracción se hace más
+intensa, los picos aumentan considerablemente (hasta 700 en bíceps y cerca de 1000 en
+tríceps). Esto se debe al reclutamiento de más unidades motoras y al aumento de su
+frecuencia de disparo conforme se requiere más fuerza.
+
+En cuanto a la ubicación corporal, sí existen diferencias: músculos grandes y superficiales
+como bíceps y tríceps generan amplitudes más altas debido a su mayor masa muscular
+activa bajo el electrodo, mientras que músculos más pequeños o profundos (como los
+faciales) suelen presentar amplitudes menores.
+
+**Q4. Screenshot de EMG de un músculo trabajado (Sección D)**
+
+<div align="center">
+ 
+<img width="1400" height="500" alt="bicep_normal" src="https://github.com/user-attachments/assets/be23bffd-919a-4a1a-96ba-03af8e51bbf2" />
+ 
+</div>
+
+En esta captura se observa la señal EMG del bíceps durante una contracción voluntaria. La
+señal permanece estable alrededor de la línea base (~510 ADC) durante los primeros
+segundos, correspondientes al estado de reposo del músculo. Aproximadamente entre los
+segundos 10 y 25 se observa un incremento notable en la amplitud de la señal, con picos
+que llegan hasta ~610 ADC, lo cual corresponde al momento en que se realizó la
+contracción muscular (flexión del brazo/codo activando el bíceps). Después del segundo 30,
+la señal vuelve a estabilizarse cerca de la línea base, indicando el retorno del músculo al
+reposo.
+Esta señal corresponde a lo esperado: en reposo, un músculo relajado genera una actividad
+eléctrica mínima (ruido de fondo), mientras que al contraerse voluntariamente se activa un
+mayor número de unidades motoras, lo que se traduce en un aumento claro y temporal de
+la amplitud de la señal, seguido de un retorno a la línea base al finalizar la contracción. La
+acción realizada fue una flexión del antebrazo (curl de bíceps) para activar deliberadamente
+el músculo bíceps braquial.
+
+**Q5. ¿La amplitud EMG equivale a la cantidad de fuerza generada por el músculo?**
+
+No, la amplitud EMG no es equivalente a la fuerza generada, aunque sí guarda una relación
+con ella. Esta relación es generalmente no lineal y está influenciada por factores como la
+ubicación del electrodo, el grosor de tejido adiposo entre el músculo y el electrodo, el
+crosstalk de músculos adyacentes, y el nivel de fatiga muscular. Por esta razón, la amplitud
+EMG debe interpretarse como un indicador indirecto de la actividad muscular y no como una
+medida exacta de la fuerza producida.
