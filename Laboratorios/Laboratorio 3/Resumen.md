@@ -90,4 +90,83 @@ https://github.com/user-attachments/assets/bdf2c63a-f7f7-4205-9f6c-91244807fbeb
 **Video 2.** Visualización en OpenSignals (r)evolution de la señal EMG durante la adquisición correspondiente al movimiento leve del bíceps.
 </div>
 
+## Guardado y extracción de datos
+Una vez finalizada cada adquisición, OpenSignals (r)evolution permitió guardar los registros obtenidos durante la práctica. Las señales fueron almacenadas en formato **`.h5`**, correspondiente a archivos HDF5 que organizan los datos de adquisición de manera estructurada. Cada archivo contiene la información asociada al dispositivo BITalino, los canales registrados y las muestras adquiridas durante la medición.
 
+<div align="center">
+ 
+<img width="2992" height="1894" alt="image" src="https://github.com/user-attachments/assets/306bcf76-21cc-41f0-861e-d03eb37d128f" />
+
+**Figura 7.** Archivos de adquisición generados por OpenSignals (r)evolution en formato `.h5`.
+
+</div>
+
+## Lectura de los archivos `.h5` en Python
+Para visualizar las señales fuera de OpenSignals, los archivos `.h5` fueron leídos utilizando Python. Se empleó la librería `h5py` para acceder a la estructura interna del archivo y extraer el canal correspondiente a la señal EMG.
+
+Los archivos `.h5` generados por OpenSignals fueron trasladados a la carpeta correspondiente al **Laboratorio 3 dentro del repositorio de GitHub**, con el fin de mantener los datos adquiridos junto con los archivos utilizados para su procesamiento.
+
+Posteriormente, se abrió el repositorio en **Visual Studio Code (VS Code)** y se creó un archivo `.py` para realizar la lectura y visualización de las señales. En el código se utilizaron las librerías `h5py` para acceder al archivo HDF5, `NumPy` para manejar las muestras y `Matplotlib` para realizar el ploteo de la señal EMG.
+
+<div align="center">
+ 
+<img width="3000" height="1886" alt="image" src="https://github.com/user-attachments/assets/cb69f77c-d7b6-4855-b8c1-7e8df50be1d9" />
+
+**Figura 8.** Incorporación de archivos `.h5` al repositorio y desarrollo del código python en Visual Studio.
+
+</div>
+
+
+El siguiente código muestra la estructura utilizada para cargar uno de los archivos `.h5`, extraer las muestras correspondientes al canal EMG, construir el eje temporal a partir de la frecuencia de muestreo y finalmente representar la señal adquirida.
+
+```python
+
+from pathlib import Path
+import h5py
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Ubicación del archivo
+carpeta = Path(__file__).parent
+archivo_h5 = carpeta / "mov_bicep.h5"
+
+# Abrir archivo H5
+with h5py.File(archivo_h5, "r") as f:
+
+    dispositivo = "98:D3:51:FE:6E:5C"
+    ruta_emg = f"{dispositivo}/raw/channel_1"
+
+    # Extraer señal
+    emg = np.array(f[ruta_emg]).flatten()
+
+# Frecuencia de muestreo utilizada
+fs = 1000  # Hz
+
+# Crear eje temporal
+tiempo = np.arange(len(emg)) / fs
+
+# Graficar señal
+plt.figure(figsize=(14, 5))
+plt.plot(tiempo, emg)
+
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Valor ADC")
+plt.title("Señal EMG cruda")
+
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+```
+El mismo procedimiento fue utilizado para visualizar las diferentes adquisiciones realizadas, modificando el archivo `.h5` correspondiente a cada condición experimental.
+
+A continuación, se presenta una de las adquisiciones correspondientes al **bíceps durante la condición de movimiento leve**. La señal mostrada corresponde a los datos crudos extraídos directamente del archivo `.h5`, sin aplicar etapas adicionales de filtrado o procesamiento.
+
+<div align="center">
+ 
+<img width="1400" height="500" alt="bicep_normal" src="https://github.com/user-attachments/assets/be23bffd-919a-4a1a-96ba-03af8e51bbf2" />
+
+
+**Figura 9.** Señal EMG cruda del bíceps durante la condición de movimiento leve, extraída del archivo `.h5` y graficada mediante Python. El eje horizontal representa el tiempo en segundos y el eje vertical los valores registrados por el convertidor analógico-digital (ADC) del sistema de adquisición.
+
+</div>
