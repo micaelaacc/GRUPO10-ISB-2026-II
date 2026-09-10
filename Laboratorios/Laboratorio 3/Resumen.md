@@ -43,7 +43,7 @@ Una vez habilitado el dispositivo, se configuró el canal analógico correspondi
 Una vez configurado el dispositivo en OpenSignals (r)evolution, se realizó la conexión del sensor de **electromiografía (EMG)** al BITalino. Se utilizó el cable correspondiente al sensor y se conectó al canal analógico **A1**, previamente habilitado en el software para la adquisición de la señal.
 
 <div align="center">
- <img width="996" height="700" alt="image" src="https://github.com/user-attachments/assets/b7ace4ea-cebf-4dd2-b2dc-64fc3ef2833f" />
+ <img width="790" height="600" alt="image" src="https://github.com/user-attachments/assets/b7ace4ea-cebf-4dd2-b2dc-64fc3ef2833f" />
 
  **Figura 4.** Conexión del sensor EMG al canal analógico A1 del BITalino (r)evolution para la adquisición de la actividad eléctrica muscular.
 </div>
@@ -79,8 +79,11 @@ https://github.com/user-attachments/assets/7c319073-d8d7-4ad9-9d49-2b0679783f39
  
 **Video 1.** Ejecución del movimiento leve durante la adquisición de la señal EMG del bíceps.
 
+</div>
+
 Durante cada adquisición, la señal EMG fue visualizada en tiempo real mediante OpenSignals. Esto permitió observar las variaciones de amplitud de la señal entre los periodos de reposo y las condiciones de activación muscular.
 
+<div align="center">
 
 https://github.com/user-attachments/assets/bdf2c63a-f7f7-4205-9f6c-91244807fbeb
  
