@@ -181,17 +181,6 @@ La señal presentada en la Figura 9 corresponde al registro de **EMG crudo del b
 
  Los demás registros EMG, junto con los archivos `.h5` correspondientes, pueden consultarse en la carpeta [`Data_OpenSignals`](./Data_OpenSignals/) del repositorio.
 
- ## Conclusiones
- - Se logró realizar la **adquisición de señales electromiográficas (EMG) mediante el sistema BITalino (r)evolution**, configurando correctamente el canal A1 para EMG y utilizando una frecuencia de muestreo de **1000 Hz**.
-
-- Se registró la actividad muscular del **bíceps y tríceps** bajo tres condiciones: reposo, movimiento leve y movimiento con resistencia. La visualización de las señales permitió reconocer variaciones en la amplitud del EMG asociadas con los diferentes periodos de actividad muscular.
-
-- OpenSignals (r)evolution permitió realizar la **adquisición, visualización y almacenamiento de las señales**, generando archivos en formato `.h5` que posteriormente pudieron ser incorporados al repositorio para su análisis.
-
-- Mediante Python y la librería `h5py` fue posible acceder a la estructura de los archivos `.h5`, identificar el canal correspondiente al EMG y extraer sus muestras. Asimismo, utilizando `NumPy` y `Matplotlib` se reconstruyó el eje temporal y se representó gráficamente la **señal EMG cruda**.
-
-- La práctica permitió integrar las diferentes etapas de un proceso básico de adquisición de señales biomédicas: **colocación de electrodos, configuración del sistema de adquisición, registro de la señal, almacenamiento de los datos y posterior visualización mediante herramientas computacionales**.
-
 ## Quizz
 A continuación, se presentan y desarrollan las preguntas propuestas en la guía de laboratorio, relacionadas con los fundamentos de la adquisición y análisis de señales biomédicas mediante BITalino.
 
@@ -263,3 +252,15 @@ ubicación del electrodo, el grosor de tejido adiposo entre el músculo y el ele
 crosstalk de músculos adyacentes, y el nivel de fatiga muscular. Por esta razón, la amplitud
 EMG debe interpretarse como un indicador indirecto de la actividad muscular y no como una
 medida exacta de la fuerza producida.
+
+ ## Conclusiones
+ - Se logró realizar la **adquisición de señales electromiográficas (EMG) mediante el sistema BITalino (r)evolution**, configurando correctamente el canal A1 para EMG y utilizando una frecuencia de muestreo de **1000 Hz**.
+
+- Se registró la actividad muscular del **bíceps y tríceps** bajo tres condiciones: reposo, movimiento leve y movimiento con resistencia. La visualización de las señales permitió reconocer variaciones en la amplitud del EMG asociadas con los diferentes periodos de actividad muscular.
+
+- OpenSignals (r)evolution permitió realizar la **adquisición, visualización y almacenamiento de las señales**, generando archivos en formato `.h5` que posteriormente pudieron ser incorporados al repositorio para su análisis.
+
+- Mediante Python y la librería `h5py` fue posible acceder a la estructura de los archivos `.h5`, identificar el canal correspondiente al EMG y extraer sus muestras. Asimismo, utilizando `NumPy` y `Matplotlib` se reconstruyó el eje temporal y se representó gráficamente la **señal EMG cruda**.
+
+- La práctica permitió integrar las diferentes etapas de un proceso básico de adquisición de señales biomédicas: **colocación de electrodos, configuración del sistema de adquisición, registro de la señal, almacenamiento de los datos y posterior visualización mediante herramientas computacionales**.
+
