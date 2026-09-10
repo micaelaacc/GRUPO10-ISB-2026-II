@@ -51,12 +51,39 @@ Una vez configurado el dispositivo en OpenSignals (r)evolution, se realizó la c
 Durante la práctica se registró la actividad electromiográfica de dos músculos: **bíceps y tríceps**. Para cada adquisición se colocaron electrodos superficiales en la región correspondiente al músculo de interés y se utilizó adicionalmente un **electrodo de referencia** colocado en el codo.
 
 <div align="center">
- <img width="600" height="800" alt="image" src="https://github.com/user-attachments/assets/2e147336-04e9-4b63-96dd-3f05dde2da46" />
+ <img width="400" height="600" alt="image" src="https://github.com/user-attachments/assets/2e147336-04e9-4b63-96dd-3f05dde2da46" />
 
  **Figura 5.** Colocación de los electrodos superficiales para la adquisición de la señal EMG del bíceps
 
- <img width="600" height="800" alt="image" src="https://github.com/user-attachments/assets/73bc4d06-18be-4156-bfec-7103bef622fb" />
+ <img width="400" height="600" alt="image" src="https://github.com/user-attachments/assets/73bc4d06-18be-4156-bfec-7103bef622fb" />
 
  **Figura 6.** Colocación de los electrodos superficiales para la adquisición de la señal EMG del tríceps
 
 </div>
+
+## Adquisición de las señales EMG
+Una vez realizada la conexión del sensor y la colocación de los electrodos, se inició la adquisición de las señales EMG mediante **OpenSignals (r)evolution**. El protocolo se aplicó tanto para el **bíceps** como para el **tríceps**, con el objetivo de observar los cambios en la actividad electromiográfica bajo diferentes niveles de activación muscular.
+
+Para cada músculo se evaluaron tres condiciones:
+
+1. **Reposo:** el participante mantuvo el músculo relajado, evitando realizar movimientos voluntarios durante el registro.
+2. **Movimiento leve:** se realizó el movimiento correspondiente a la activación del músculo sin aplicar una resistencia externa adicional.
+3. **Movimiento con fuerza en dirección contraria:** se realizó el movimiento mientras se aplicaba una fuerza externa en sentido contrario, generando una mayor resistencia al movimiento y, por tanto, una mayor demanda de activación muscular.
+
+Para cada una de las condiciones se realizaron **tres adquisiciones independientes**. Entre adquisiciones se mantuvo un periodo de descanso de aproximadamente **30 segundos a 1 minuto**, con la finalidad de permitir la recuperación antes de realizar la siguiente toma.
+
+
+<div align="center">
+https://github.com/user-attachments/assets/7c319073-d8d7-4ad9-9d49-2b0679783f39
+ 
+**Video 1.** Ejecución del movimiento leve durante la adquisición de la señal EMG del bíceps.
+
+Durante cada adquisición, la señal EMG fue visualizada en tiempo real mediante OpenSignals. Esto permitió observar las variaciones de amplitud de la señal entre los periodos de reposo y las condiciones de activación muscular.
+
+
+https://github.com/user-attachments/assets/bdf2c63a-f7f7-4205-9f6c-91244807fbeb
+ 
+**Video 2.** Visualización en OpenSignals (r)evolution de la señal EMG durante la adquisición correspondiente al movimiento leve del bíceps.
+</div>
+
+
