@@ -88,6 +88,12 @@ Durante cada adquisición, la señal EMG fue visualizada en tiempo real mediante
 https://github.com/user-attachments/assets/bdf2c63a-f7f7-4205-9f6c-91244807fbeb
  
 **Video 2.** Visualización en OpenSignals (r)evolution de la señal EMG durante la adquisición correspondiente al movimiento leve del bíceps.
+
+
+https://github.com/user-attachments/assets/54f6385e-a78c-4480-bd20-6d8e519b9c57
+
+**Video 3.** Ejecución del movimiento con fuerza en dirección contraria durante la adquisición de la señal EMG del tríceps.
+
 </div>
 
 ## Guardado y extracción de datos
