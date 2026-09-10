@@ -170,3 +170,5 @@ A continuación, se presenta una de las adquisiciones correspondientes al **bíc
 **Figura 9.** Señal EMG cruda del bíceps durante la condición de movimiento leve, extraída del archivo `.h5` y graficada mediante Python. El eje horizontal representa el tiempo en segundos y el eje vertical los valores registrados por el convertidor analógico-digital (ADC) del sistema de adquisición.
 
 </div>
+
+ Los demás registros EMG, junto con los archivos `.h5` correspondientes, pueden consultarse en la carpeta [`Data_OpenSignals`](./Data_OpenSignals/) del repositorio.
