@@ -76,7 +76,7 @@ Durante cada etapa, la señal de ECG fue supervisada en tiempo real para asegura
 ## Guardado y extracción de datos
 Una vez finalizada cada adquisición, OpenSignals (r)evolution permitió guardar los registros obtenidos durante la práctica. Las señales fueron almacenadas en formato **`.h5`**, correspondiente a archivos HDF5 que organizan los datos de adquisición de manera estructurada. Cada archivo contiene la información asociada al dispositivo BITalino, los canales registrados y las muestras adquiridas durante la medición.
 
-** Faltan los videos (nose como se pone :c)**
+# Faltan imagen
 
 **Figura 6.** Archivos de adquisición generados por OpenSignals (r)evolution en formato `.h5`.
 
@@ -88,7 +88,7 @@ Los archivos `.h5` generados por OpenSignals fueron trasladados a la carpeta cor
 
 Posteriormente, se abrió el repositorio en **Visual Studio Code (VS Code)** y se creó un archivo `.py` para realizar la lectura y visualización de las señales. En el código se utilizaron las librerías `h5py` para acceder al archivo HDF5, `NumPy` para manejar las muestras y `Matplotlib` para realizar el ploteo de la señal ECG.
 
-** Faltan los videos (nose como se pone :c)**
+# Faltan imagen
 
 **Figura 7.** Incorporación de archivos `.h5` al repositorio y desarrollo del código python en Visual Studio.
 
@@ -136,3 +136,9 @@ plt.show()
 El mismo procedimiento fue utilizado para visualizar las diferentes adquisiciones realizadas, modificando el archivo `.h5` correspondiente a cada condición experimental.
 
 ## Conclusiones
+
+- Se logró adquirir exitosamente las señales de electrocardiografía (ECG) utilizando el kit BITalino (r)evolution y OpenSignals, validando la correcta configuración del hardware y la ubicación de los electrodos según las distintas configuraciones de las derivaciones de Einthoven.
+
+- Fue posible registrar y evidenciar el comportamiento de la actividad eléctrica cardíaca bajo diferentes condiciones fisiológicas y de esfuerzo físico (reposo, hiperventilación, apnea y post-actividad física), permitiendo observar variaciones en el ritmo y el comportamiento de la señal.
+
+- La importación y el procesamiento de los archivos de datos en Python resultaron efectivos para acceder a los registros crudos y representar las señales de manera independiente al software de adquisición, facilitando su análisis fuera de la plataforma original.
