@@ -1,3 +1,15 @@
+# Laboratorio 4: Adquisición de ECG con BITalino y OpenSignals
+En particular, se trabajó con la adquisición de electrocardiografía (ECG), registrando la actividad eléctrica cardíaca mediante electrodos superficiales bajo distintas configuraciones de las derivaciones de Einthoven. Se observaron las variaciones en la señal y en los complejos bajo diferentes condiciones fisiológicas y de actividad física (como reposo, hiperventilación, hipoventilación y post-esfuerzo).
+
+Finalmente, las adquisiciones realizadas en OpenSignals fueron almacenadas y posteriormente importadas a Python, permitiendo acceder a los datos crudos y representar nuevamente la señal fuera del software de adquisición.
+
+## Objetivos específicos de la práctica
+- Adquirir señales biomédicas de ECG mediante configuraciones de electrodos superficiales.
+- Hacer una configuración correcta del kit BiTalino y OpenSignals para la lectura cardíaca.
+- Evaluar el comportamiento de la señal de ECG ante diferentes estados fisiológicos y de esfuerzo físico.
+- Extraer y procesar la información de las señales de ECG en Python para su análisis detallado.
+---
+
 ## Configuración de BITalino y OpenSignals
 Antes de iniciar la adquisición, se verificó que el kit BITalino (r)evolution contara con los componentes necesarios para la práctica. Se conectó la batería a la placa y posteriormente se encendió el dispositivo, dejándolo disponible para establecer la comunicación inalámbrica con la computadora.
 
@@ -32,6 +44,9 @@ Una vez configurado el dispositivo en OpenSignals (r)evolution, se realizó la c
  **Figura 4.** Conexión del sensor de ECG al canal analógico A1 del BITalino (r)evolution para la adquisición de la actividad eléctrica cardíaca.
 </div>
 Durante la práctica se registró la actividad eléctrica cardíaca utilizando las derivaciones de Einthoven. Para la adquisición se colocaron electrodos superficiales en las regiones correspondientes a los puntos clave de las derivaciones —específicamente debajo de las clavículas y en la zona cercana al abdomen/ombligo—, y se se iban rotando y reposicionando dependiendo de la derivación específica que se evaluaba.
+
+# Faltan la imagen (nose como se pone :c)
+
 <div align="center">
  
   **Figura 5.** Colocación de los electrodos superficiales para la adquisición de la señal ECG
@@ -49,9 +64,13 @@ Para cada una de las configuraciones de derivación evaluadas —cubriendo las d
 4. **Actividad física (Post-esfuerzo):** Se realizó una prueba de esfuerzo físico (con una duración aproximada de 5 a 10 minutos o hasta que el participante se encontrara físicamente agitado). Inmediatamente al finalizar, se procedió a ajustar los electrodos con la mayor rapidez posible para capturar el registro exacto en todas las derivaciones (esta fase de alta intensidad se realizó en una única intervención).
 
 Durante cada etapa, la señal de ECG fue supervisada en tiempo real para asegurar una correcta amplitud del complejo QRS y minimizar el ruido antes de almacenar los datos para su posterior análisis en Python.
-** Faltan los videos (nose como se pone :c)**
+
+# Faltan los videos (nose como se pone :c)
+
  **Video 1.** Ejecución de la prueba de ECG en reposo y Adquisición de la señal de ECG  
+
  **Video 2.** Ejecución de los ciclos de hiperventilación
+
  **Video 3.** Ejecución de la actividad física (Post-esfuerzo)
 
 ## Guardado y extracción de datos
