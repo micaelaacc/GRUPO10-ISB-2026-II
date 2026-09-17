@@ -36,8 +36,10 @@ Una vez habilitado el dispositivo, se configuró el canal analógico correspondi
 
   **Figura 3.** Configuración del BITalino en OpenSignals.
 </div>
+
 ## Conexión del sensor ECG y colocación de electrodos
 Una vez configurado el dispositivo en OpenSignals (r)evolution, se realizó la conexión del sensor de **electrocardiograma (EMG)** al BITalino. Se utilizó el cable correspondiente al sensor y se conectó al canal analógico **A1**, previamente habilitado en el software para la adquisición de la señal.
+
 <div align="center">
  <img width="790" height="600" alt="image" src="https://github.com/user-attachments/assets/b7ace4ea-cebf-4dd2-b2dc-64fc3ef2833f" />
 
