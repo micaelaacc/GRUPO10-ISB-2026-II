@@ -50,9 +50,9 @@ Durante la práctica se registró la actividad eléctrica cardíaca utilizando l
 # Faltan la imagen (nose como se pone :c)
 
 <div align="center">
-  <img width="500" src="Laboratorios\Laboratorio 4\Fotos y videos\foto de la colocacion de electrodos.jpeg" alt="Colocación de electrodos ECG" />
+ 
 
-  **Figura 5.** Colocación de los electrodos  para la adquisición de la señal ECG.
+  **Figura 5.** Colocación de los electrodos superficiales para la adquisición de la señal ECG.
 </div>
 
 ## Adquisición de la señal de ECG
@@ -70,25 +70,18 @@ Durante cada etapa, la señal de ECG fue supervisada en tiempo real para asegura
 
 # Faltan los videos (nose como se pone :c)
 <div align="center">
-  <video width="600" controls>
-    <source src="Laboratorios\Laboratorio 4\Fotos y videos\video de mediciones en reposo.mp4" type="video reposo/mp4">
-  </video>
+  
 
   **Video 1.** Ejecución de la prueba de ECG en reposo 
 </div>
  
 <div align="center">
-  <video width="600" controls>
-    <source src="Laboratorios\Laboratorio 4\Fotos y videos\video hiperventilando.mp4" type="video hiperventilación/mp4">
-  </video>
+
 
   **Video 2.** Ejecución de los ciclos de hiperventilación.
 </div>
 
 <div align="center">
-  <video width="600" controls>
-    <source src="Laboratorios\Laboratorio 4\Fotos y videos\video del ejercicio.mp4" type="video ejercicio/mp4">
-  </video>
 
   **Video 3.** Ejecución de la actividad física (Post-esfuerzo).
 </div>
