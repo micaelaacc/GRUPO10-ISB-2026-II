@@ -1,5 +1,5 @@
 # Laboratorio 4: Adquisición de ECG con BITalino y OpenSignals
-En particular, se trabajó con la adquisición de electrocardiografía (ECG), registrando la actividad eléctrica cardíaca mediante electrodos superficiales bajo distintas configuraciones de las derivaciones de Einthoven. Se observaron las variaciones en la señal y en los complejos bajo diferentes condiciones fisiológicas y de actividad física (como reposo, hiperventilación, hipoventilación y post-esfuerzo).
+La sesión nos permitió evaluar las distintas derivaciones de ECG.En particular, se trabajó con la adquisición de electrocardiografía (ECG), registrando la actividad eléctrica cardíaca mediante electrodos superficiales bajo distintas configuraciones de las derivaciones de Einthoven. Se observaron las variaciones en la señal y en los complejos bajo diferentes condiciones fisiológicas y de actividad física (como reposo, hiperventilación, hipoventilación y post-esfuerzo).
 
 Finalmente, las adquisiciones realizadas en OpenSignals fueron almacenadas y posteriormente importadas a Python, permitiendo acceder a los datos crudos y representar nuevamente la señal fuera del software de adquisición.
 
