@@ -29,7 +29,7 @@ Luego se abrió el software **OpenSignals (r)evolution)** y se realizó la búsq
   **Figura 2.** Detección del dispositivo BITalino en OpenSignals.
 </div>
 
-Una vez habilitado el dispositivo, se configuró el canal analógico correspondiente al sensor de electromiografía. Se seleccionó el canal **A1** como señal **EMG** y se estableció una frecuencia de muestreo de **1000 Hz**, mientras que los demás canales analógicos permanecieron deshabilitados como se muestra en la Figura 3.
+Una vez habilitado el dispositivo, se configuró el canal analógico correspondiente al sensor de electrocardiografía. Se seleccionó el canal **A1** como señal **ECG** y se estableció una frecuencia de muestreo de **1000 Hz**, mientras que los demás canales analógicos permanecieron deshabilitados como se muestra en la Figura 3.
 
 <div align="center">
 <img width="1624" height="1360" alt="seleccionar canal" src="https://github.com/user-attachments/assets/299db446-e5cc-4d86-a1a9-66f04950727d" />
@@ -38,20 +38,21 @@ Una vez habilitado el dispositivo, se configuró el canal analógico correspondi
 </div>
 
 ## Conexión del sensor ECG y colocación de electrodos
-Una vez configurado el dispositivo en OpenSignals (r)evolution, se realizó la conexión del sensor de **electrocardiograma (EMG)** al BITalino. Se utilizó el cable correspondiente al sensor y se conectó al canal analógico **A1**, previamente habilitado en el software para la adquisición de la señal.
+Una vez configurado el dispositivo en OpenSignals (r)evolution, se realizó la conexión del sensor de **electrocardiograma (ECG)** al BITalino. Se utilizó el cable correspondiente al sensor y se conectó al canal analógico **A1**, previamente habilitado en el software para la adquisición de la señal.
 
 <div align="center">
  <img width="790" height="600" alt="image" src="https://github.com/user-attachments/assets/b7ace4ea-cebf-4dd2-b2dc-64fc3ef2833f" />
 
  **Figura 4.** Conexión del sensor de ECG al canal analógico A1 del BITalino (r)evolution para la adquisición de la actividad eléctrica cardíaca.
 </div>
-Durante la práctica se registró la actividad eléctrica cardíaca utilizando las derivaciones de Einthoven. Para la adquisición se colocaron electrodos superficiales en las regiones correspondientes a los puntos clave de las derivaciones —específicamente debajo de las clavículas y en la zona cercana al abdomen/ombligo—, y se se iban rotando y reposicionando dependiendo de la derivación específica que se evaluaba.
+Durante la práctica se registró la actividad eléctrica cardíaca utilizando las derivaciones de Einthoven. Para la adquisición se colocaron electrodos en las regiones correspondientes a los puntos clave de las derivaciones —específicamente debajo de las clavículas y en la zona cercana al abdomen/ombligo—, y se se iban rotando y reposicionando dependiendo de la derivación específica que se evaluaba.
 
 # Faltan la imagen (nose como se pone :c)
 
 <div align="center">
- 
-  **Figura 5.** Colocación de los electrodos superficiales para la adquisición de la señal ECG
+  <img width="500" src="Laboratorios/Laboratorio 4/Data_OpenSignals/Fotos y videos/foto de la colocacion de electrodos.jpeg" alt="Colocación de electrodos ECG" />
+
+  **Figura 5.** Colocación de los electrodos  para la adquisición de la señal ECG.
 </div>
 
 ## Adquisición de la señal de ECG
@@ -68,12 +69,30 @@ Para cada una de las configuraciones de derivación evaluadas —cubriendo las d
 Durante cada etapa, la señal de ECG fue supervisada en tiempo real para asegurar una correcta amplitud del complejo QRS y minimizar el ruido antes de almacenar los datos para su posterior análisis en Python.
 
 # Faltan los videos (nose como se pone :c)
+<div align="center">
+  <video width="600" controls>
+    <source src="Laboratorios/Laboratorio 4/Data_OpenSignals/Fotos y videos/video de mediciones en reposo.mp4" type="video reposo/mp4">
+  </video>
 
- **Video 1.** Ejecución de la prueba de ECG en reposo y Adquisición de la señal de ECG  
+  **Video 1.** Ejecución de la prueba de ECG en reposo 
+</div>
+ 
+<div align="center">
+  <video width="600" controls>
+    <source src="Laboratorios/Laboratorio 4/Data_OpenSignals/Fotos y videos/video hiperventilando.mp4" type="video hiperventilación/mp4">
+  </video>
 
- **Video 2.** Ejecución de los ciclos de hiperventilación
+  **Video 2.** Ejecución de los ciclos de hiperventilación.
+</div>
 
- **Video 3.** Ejecución de la actividad física (Post-esfuerzo)
+<div align="center">
+  <video width="600" controls>
+    <source src="Laboratorios/Laboratorio 4/Data_OpenSignals/Fotos y videos/video del ejercicio.mp4" type="video ejercicio/mp4">
+  </video>
+
+  **Video 3.** Ejecución de la actividad física (Post-esfuerzo).
+</div>
+ 
 
 ## Guardado y extracción de datos
 Una vez finalizada cada adquisición, OpenSignals (r)evolution permitió guardar los registros obtenidos durante la práctica. Las señales fueron almacenadas en formato **`.h5`**, correspondiente a archivos HDF5 que organizan los datos de adquisición de manera estructurada. Cada archivo contiene la información asociada al dispositivo BITalino, los canales registrados y las muestras adquiridas durante la medición.
@@ -94,47 +113,10 @@ Posteriormente, se abrió el repositorio en **Visual Studio Code (VS Code)** y s
 
 **Figura 7.** Incorporación de archivos `.h5` al repositorio y desarrollo del código python en Visual Studio.
 
-El siguiente código muestra la estructura utilizada para cargar uno de los archivos `.h5`, extraer las muestras correspondientes al canal EMG, construir el eje temporal a partir de la frecuencia de muestreo y finalmente representar la señal adquirida.
+El siguiente código muestra la estructura utilizada para cargar uno de los archivos `.h5`, extraer las muestras correspondientes al canal ECG, construir el eje temporal a partir de la frecuencia de muestreo y finalmente representar la señal adquirida.
 
-```python
+# falta el codigo 
 
-from pathlib import Path
-import h5py
-import numpy as np
-import matplotlib.pyplot as plt
-
-# Ubicación del archivo
-carpeta = Path(__file__).parent
-archivo_h5 = carpeta / "mov_bicep.h5"
-
-# Abrir archivo H5
-with h5py.File(archivo_h5, "r") as f:
-
-    dispositivo = "98:D3:51:FE:6E:5C"
-    ruta_emg = f"{dispositivo}/raw/channel_1"
-
-    # Extraer señal
-    emg = np.array(f[ruta_emg]).flatten()
-
-# Frecuencia de muestreo utilizada
-fs = 1000  # Hz
-
-# Crear eje temporal
-tiempo = np.arange(len(emg)) / fs
-
-# Graficar señal
-plt.figure(figsize=(14, 5))
-plt.plot(tiempo, emg)
-
-plt.xlabel("Tiempo (s)")
-plt.ylabel("Valor ADC")
-plt.title("Señal EMG cruda")
-
-plt.grid(True)
-plt.tight_layout()
-plt.show()
-
-```
 El mismo procedimiento fue utilizado para visualizar las diferentes adquisiciones realizadas, modificando el archivo `.h5` correspondiente a cada condición experimental.
 
 ## Conclusiones
