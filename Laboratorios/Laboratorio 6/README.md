@@ -79,7 +79,7 @@ En las evidencias se observan:
 - Computadora con OpenSignals para visualizar la señal.
 - Audífonos utilizados por los participantes.
 
-La guía especifica electrodos pregelificados de Ag/AgCl, dos contactos de medición y una referencia adicional. Los audífonos son visibles, pero las imágenes no permiten determinar qué audio se reprodujo ni establecer su efecto sobre el registro. [2, pp. 6 y 11–12]
+La guía especifica electrodos pregelificados de Ag/AgCl, dos contactos de medición y una referencia adicional. Los audífonos son visibles en las evidencias. Según el recuerdo del grupo, durante la sesión se utilizó música relajante y después música estruendosa para explorar cambios del trazado; las imágenes por sí solas no identifican cada audio ni permiten medir su efecto. [2, pp. 6 y 11–12]
 
 En la interfaz fotografiada se distingue una frecuencia de muestreo de **1000 Hz** y un canal identificado como **4 / EEG / A4**. La frecuencia de muestreo indica cuántas muestras se adquieren por segundo; no corresponde a la frecuencia de las ondas cerebrales.
 
@@ -121,6 +121,18 @@ Las diferencias visibles entre ambas imágenes no permiten establecer cuál part
 
 ---
 
+## 3.3. Actividades realizadas durante la sesión
+
+Además del montaje y la visualización de la señal, el grupo recuerda las siguientes actividades:
+
+- Se hicieron preguntas para estimular el pensamiento de la persona mientras llevaba audífonos y tenía los ojos cubiertos.
+- Se reprodujo música relajante y después música estruendosa para observar posibles cambios del trazado.
+- Tras un periodo con audífonos y los ojos cubiertos, se descubrieron los ojos y se indicó mirar la pared. Luego se alternó cerrar y abrir los ojos varias veces; el tiempo recordado antes de volver a abrirlos es de aproximadamente cinco a siete segundos.
+
+Durante estas actividades se observó la señal en OpenSignals. La descripción procede del recuerdo del grupo: no se conserva una secuencia completa con tiempos exactos ni se identifica qué condición corresponde a cada fotografía o fragmento de video. Las variaciones visuales no permiten confirmar por sí solas cambios en una banda específica.
+
+---
+
 # 4. Protocolo de referencia
 
 La guía plantea la siguiente secuencia para comparar condiciones: [2, pp. 14–15]
@@ -133,7 +145,7 @@ La guía plantea la siguiente secuencia para comparar condiciones: [2, pp. 14–
 6. Realizar cálculos mentales y guardar la adquisición.
 7. Repetir la experiencia en Fp2, Fp1 y O2 para comparar ubicaciones.
 
-Esta secuencia describe la propuesta de la guía. Las evidencias aportadas no documentan por completo sus tiempos, repeticiones, cálculos mentales o cambios de ubicación, por lo que no se presentan como etapas verificadas de nuestra sesión.
+Esta secuencia describe la propuesta de la guía. En nuestra sesión se recuerda la alternancia de ojos abiertos y cerrados y la realización de preguntas para pensar, además de los estímulos musicales descritos en la sección 3.3. No se confirma que se hayan seguido exactamente los tiempos, las cinco repeticiones, los cálculos específicos o todos los cambios de ubicación propuestos en la guía.
 
 ---
 

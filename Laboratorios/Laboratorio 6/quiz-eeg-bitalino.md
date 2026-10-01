@@ -6,7 +6,7 @@
 
 [Volver al informe del Laboratorio 6](README.md)
 
-Las respuestas distinguen el fundamento teórico y el protocolo de la guía de lo que muestran las evidencias de nuestra práctica. Se dispone de dos fotografías y cuatro videos, pero no de archivos digitales de señal EEG exportados de OpenSignals ni de registros etiquetados por condición o posición del sensor. Por ello, las preguntas experimentales se responden con observaciones cualitativas y sus límites, sin inventar mediciones o resultados.
+Durante la práctica realizamos preguntas para estimular el pensamiento, utilizamos música relajante y música estruendosa, y alternamos ojos abiertos y cerrados mientras observábamos el trazado en OpenSignals. Las respuestas combinan estas actividades, recordadas por el grupo, con las fotografías, los videos y el fundamento de la guía. No se dispone de archivos digitales de EEG para medir potencia por bandas.
 
 ---
 
@@ -28,8 +28,6 @@ Las bandas se definen con los mismos intervalos al comparar las distintas áreas
 
 El sensor descrito tiene un pasabanda de **0,8-48 Hz**: atenúa la parte más lenta de delta y no permite estudiar toda la actividad gamma. El extremo de 0 Hz de la clasificación de la guía no representa una oscilación adquirida por este sensor. Los **1000 Hz de muestreo** visibles en OpenSignals indican muestras por segundo y deben distinguirse de las frecuencias de las ondas EEG.
 
-**Fuente:** guía, pp. 8-12 y 15; informe y fotografías del laboratorio.
-
 ---
 
 ## 2. Filtro esencial para trabajar con EEG
@@ -42,47 +40,39 @@ La señal EEG es pequeña y el sensor utiliza una ganancia elevada, por lo que e
 
 El filtrado no elimina todos los artefactos: parpadeos, movimientos oculares y contracciones musculares pueden tener componentes dentro del pasabanda. También se necesita buen contacto de los electrodos y controlar los movimientos. Además, el registro mostrado por el equipo ya tiene el acondicionamiento del sensor; no es una señal completamente sin filtrar.
 
-**Fuente:** guía, p. 12.
-
 ---
 
 ## 3. Influencia de los pensamientos y activación de una banda
 
 **Pregunta:** ¿Podemos influir en el EEG con nuestros pensamientos? ¿Qué acción puede favorecer una banda elegida? ¿Pudimos visualizar ese cambio?
 
-Sí: cambiar la actividad mental o la condición sensorial puede modificar la actividad neuronal y la potencia de algunas bandas. Sin embargo, no se controla voluntariamente una frecuencia exacta ni se obtiene siempre la misma respuesta.
+Sí. La actividad mental y los estímulos sensoriales pueden modificar la actividad neuronal y la potencia relativa de algunas bandas. Esto no significa controlar una frecuencia exacta ni obtener la misma respuesta en todas las personas.
 
-Una acción concreta para explorar la **banda alfa de 8-12 Hz** es permanecer despierto y relajado, cerrar los ojos y comparar el registro con la condición de ojos abiertos. La guía describe un aumento de alfa con los ojos cerrados y una reducción al abrirlos o durante actividad mental. Su Figura 8 muestra un ejemplo de esa respuesta; **ese registro pertenece a la guía, no a nuestro grupo**.
+En nuestra experiencia hicimos preguntas para que la persona pensara mientras llevaba audífonos y tenía los ojos cubiertos. También utilizamos música relajante y después música estruendosa para explorar posibles cambios del registro. En otra parte, tras permanecer un rato con los ojos cubiertos y los audífonos, se descubrieron los ojos y se indicó mirar la pared; luego se alternó cerrar y abrir los ojos varias veces. El tiempo recordado antes de volver a abrirlos es de aproximadamente **cinco a siete segundos**, sin un conteo exacto de las repeticiones ni una secuencia completa confirmada.
 
-En nuestra práctica se observan variaciones del trazado en OpenSignals, pero las evidencias no identifican con precisión segmentos de ojos abiertos y cerrados. Por eso, **no podemos confirmar que el cambio observado sea un aumento de alfa**. Harían falta segmentos de señal digital etiquetados por condición y una comparación de potencia en la banda, además de revisar posibles artefactos.
+Una acción concreta para explorar la **banda alfa de 8-12 Hz** es comparar ojos cerrados, estando despierto y relajado, con ojos abiertos. Según la guía, alfa puede aumentar con los ojos cerrados y disminuir al abrirlos. Las preguntas que requieren pensar también permiten explorar cambios asociados a la actividad cognitiva.
 
-**Fuente:** guía, pp. 9, 13 y 15; evidencias audiovisuales del laboratorio.
+**Sí observamos variaciones del trazado en OpenSignals durante la sesión.** Esa observación visual no identifica por sí sola la banda que cambió. Para afirmar que aumentó alfa o beta habría que comparar segmentos digitales correspondientes a cada condición. La música tampoco permite asignar automáticamente una banda a cada tipo de sonido.
 
 ---
 
-## 4. Evidencia de un segmento del registro y relación con lo esperado
+## 4. Muestra del registro y relación con lo esperado
 
 **Pregunta:** Muestra una captura de una porción relevante de EEG del experimento propuesto. ¿Corresponde a lo esperado y por qué?
 
-La siguiente evidencia muestra un segmento del trazado de OpenSignals durante la adquisición. **Es una fotografía de la pantalla tomada en la práctica, no una captura digital exportada del programa.** Se conserva la imagen original para mostrar el contexto del registro y evitar presentar una señal reconstruida como si fuera un dato experimental.
+La siguiente fotografía muestra una porción del registro que visualizamos en OpenSignals durante la práctica. Sirve como muestra del trazado observado al trabajar con estímulos auditivos, preguntas y cambios entre ojos abiertos y cerrados, aunque no recordamos a cuál de esas etapas corresponde exactamente esta imagen.
 
 <div align="center">
 
 <img src="evidencias/registro-eeg-02.jpeg" alt="Fotografía de la segunda participante y pantalla de OpenSignals con un segmento del trazado EEG" width="600" />
 
-**Figura 1.** Evidencia original de la segunda participante. En la pantalla inferior se observan oscilaciones y deflexiones de distinta amplitud durante la adquisición.
+**Figura 1.** Registro de la segunda participante en OpenSignals. La pantalla muestra oscilaciones y deflexiones de distinta amplitud.
 
 </div>
 
-[Abrir la fotografía en tamaño completo](evidencias/registro-eeg-02.jpeg)
+La imagen muestra el tipo de señal variable que observamos durante la sesión. **Corresponde a lo esperado en cuanto a visualizar un trazado que varía en el tiempo**, pero la fotografía aislada no demuestra que esas variaciones fueran causadas por la música, las preguntas o la apertura de los ojos.
 
-Se aprecia un trazado irregular, con oscilaciones pequeñas y deflexiones más pronunciadas, incluida una deflexión negativa destacada. Esto es compatible con la visualización de un registro adquirido por el canal EEG y con la posible presencia de artefactos. **No permite confirmar la respuesta específica esperada para ojos cerrados o cálculos mentales**, porque no se conoce qué condición corresponde a ese segmento ni se dispone de datos para analizar sus frecuencias.
-
-Una señal variable es esperable durante la adquisición, pero las deflexiones grandes no prueban mayor actividad cerebral o concentración. En un montaje frontal también pueden influir los ojos, los músculos y el contacto de los electrodos. No se atribuye una causa concreta a cada deflexión ni se extraen amplitudes exactas de esta fotografía.
-
-**Alcance de la evidencia:** no se proporcionó una captura digital con un intervalo de tarea identificado; la fotografía es la evidencia disponible y no sustituye esa comprobación experimental.
-
-**Fuente:** `evidencias/registro-eeg-02.jpeg`; guía, pp. 12-15.
+Para la alternancia de ojos abiertos y cerrados, el cambio teórico esperado era una modificación de la actividad alfa; para las preguntas, una modificación de la actividad relacionada con el pensamiento. En la foto se distinguen oscilaciones pequeñas y deflexiones más marcadas, pero no podemos identificar una banda específica solo por su apariencia. También pueden intervenir parpadeos, movimientos y cambios de contacto de los electrodos.
 
 ---
 
@@ -96,27 +86,23 @@ La guía propone repetir las actividades en Fp2, Fp1 y O2. En las evidencias del
 
 Las diferencias entre fotografías de participantes distintos tampoco equivalen a una comparación Fp1-Fp2. Para comprobarla habría que mantener condiciones comparables, identificar cada montaje y tarea, revisar artefactos y comparar los segmentos digitales mediante medidas definidas, como potencia por bandas.
 
-**Fuente:** guía, pp. 10-12 y 14-15; fotografías del laboratorio.
-
 ---
 
 ## 6. Frecuencias esperadas en las tareas y observación del registro RAW
 
 **Pregunta:** ¿Qué frecuencias deberían cambiar en las tareas propuestas? ¿Se pueden ver esos cambios específicos en la señal RAW? Describe lo observado.
 
-| Condición del protocolo | Cambio teórico que se busca explorar | Alcance en nuestra práctica |
-|---|---|---|
-| Línea base despierto, relajado y con ojos cerrados | Mayor presencia relativa de alfa, 8-12 Hz, respecto a ojos abiertos. | No hay un segmento digital identificado que permita comprobarla. |
-| Alternancia de ojos abiertos y cerrados | Aumento de alfa al cerrar los ojos y reducción al abrirlos; la respuesta puede variar con la posición del sensor. | Las imágenes no identifican los tiempos ni cada condición. |
-| Cálculos mentales | Modulación de beta, 12-25 Hz, asociada al pensamiento activo; la guía también relaciona theta, 4-8 Hz, con tareas cognitivas. No se espera un cambio idéntico en todos los sujetos. | No se proporcionaron segmentos etiquetados como cálculos mentales ni potencia por bandas. |
+| Actividad | Cambio que se busca explorar |
+|---|---|
+| Alternar ojos abiertos y cerrados | Modulación de alfa, **8-12 Hz**: puede aumentar al cerrar los ojos durante la vigilia relajada y disminuir al abrirlos. |
+| Responder preguntas que requieren pensar | Cambios de beta, **12-25 Hz**, asociada en la guía al pensamiento activo. Theta, **4-8 Hz**, también puede variar según el tipo y dificultad de la tarea. |
+| Escuchar música relajante y después música estruendosa | Posibles cambios de la actividad asociada a relajación, atención o alerta. El tipo de música por sí solo no define una banda ni garantiza un aumento de alfa o beta. |
 
-Estos cambios describen **expectativas del protocolo**, no resultados medidos por nuestro grupo. No se espera comprobar sueño profundo ni un aumento de delta únicamente por cerrar los ojos estando despierto.
+Estas son expectativas teóricas para interpretar las actividades que realizamos, no cambios de potencia ya medidos. La guía propone cálculos mentales; nuestro recuerdo de la experiencia confirma preguntas para pensar, sin precisar que todas fueran operaciones de cálculo. Cubrir los ojos o escuchar música relajante tampoco demuestra que la persona estuviera dormida.
 
-En un trazado temporal pueden apreciarse cambios de amplitud, regularidad y rapidez de las oscilaciones. Sin embargo, la mezcla de frecuencias y los artefactos impiden identificar de forma fiable una banda solo mirando fotos o videos. Para confirmar cambios específicos se necesitan los datos digitales y un análisis espectral por segmentos o una estimación de potencia por bandas.
+**Durante la práctica observamos variaciones del trazado en OpenSignals.** En las fotografías y los videos se aprecian oscilaciones de menor amplitud y deflexiones más pronunciadas. No recordamos con certeza qué etapa corresponde a cada fragmento, por lo que no asignamos esos cambios a una música o a una respuesta concreta.
 
-En el material disponible se ve un trazado que cambia en el tiempo, con oscilaciones pequeñas y deflexiones más grandes. Uno de los videos muestra ajustes de los audífonos, evento relevante al revisar artefactos; no se puede relacionar cada pico con ese movimiento sin una sincronización precisa. **No podemos afirmar que se haya visto un aumento de alfa, beta o theta en la señal RAW.** Además, incluso el registro denominado RAW en el contexto del equipo ya pasó por la amplificación y el pasabanda del sensor de 0,8-48 Hz.
-
-**Fuente:** guía, pp. 9, 12-15; fotografías y videos del laboratorio.
+La señal temporal RAW contiene una mezcla de componentes y posibles artefactos. La amplitud o la forma de un pico no basta para identificar alfa, beta o theta. Para comprobar sus cambios específicos se necesitan segmentos digitales identificados por tarea y un análisis de potencia por bandas. Además, el registro del equipo ya pasó por la amplificación y el pasabanda del sensor de **0,8-48 Hz**.
 
 ---
 
@@ -130,14 +116,11 @@ La relación entre una tarea y el EEG se estudia con características específic
 
 Con nuestras fotos y videos **no se puede cuantificar el nivel de concentración ni ordenar a los participantes según su amplitud EEG**.
 
-**Fuente:** guía, pp. 9 y 12; limitaciones de las evidencias del laboratorio.
-
 ---
 
 ## Referencias y evidencias
 
-1. PLUX - Wireless Biosignals. **BITalino Home-Guide #3: Electroencephalography (EEG), Exploring Brain Signals.** Versión del 15/02/2021. Secciones 5-7, pp. 8-16 del archivo PDF. La página del quiz es la 16 del PDF, aunque su pie dice “16 of 15”.
+1. PLUX - Wireless Biosignals. **BITalino Home-Guide #3: Electroencephalography (EEG), Exploring Brain Signals.** Versión del 15/02/2021. Secciones 5-7, pp. 8-16 del archivo PDF.
 2. Grupo 10. [Informe del Laboratorio 6: Adquisición de EEG con BITalino y OpenSignals](README.md). Curso Introducción a Señales Biomédicas, ciclo 2026-II.
 3. Grupo 10. [Evidencias de la práctica](evidencias/): dos fotografías, cuatro videos y cuatro miniaturas. En este quiz se reutiliza la fotografía original `registro-eeg-02.jpeg`.
-
-**Comprobación de cobertura:** se responden las siete preguntas y sus subpreguntas; la Q4 incluye una evidencia visual. La confirmación de bandas, condiciones de tarea y diferencias Fp1-Fp2 queda limitada por la ausencia de registros EEG digitales y etiquetas experimentales.
+4. Grupo 10. Descripción recordada de las actividades de la sesión: preguntas para pensar, música relajante y estruendosa, y alternancia de ojos abiertos y cerrados. Los tiempos se recuerdan de manera aproximada.
