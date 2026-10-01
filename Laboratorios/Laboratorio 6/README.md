@@ -3,6 +3,8 @@
 **Curso:** Introducción a Señales Biomédicas  
 **Grupo:** 10 | **Ciclo:** 2026-II
 
+**Materiales complementarios:** [Quiz resuelto: Exploración de señales EEG con BITalino](quiz-eeg-bitalino.md) | [Infografía](INFOGRAF%C3%8DA%20%282%29.jpeg)
+
 ## Introducción
 
 La sesión permitió relacionar los fundamentos de la **electroencefalografía (EEG)** con la adquisición de una señal mediante **BITalino** y su visualización en **OpenSignals**. El EEG registra diferencias de potencial en la superficie de la cabeza, asociadas principalmente con la actividad postsináptica conjunta de poblaciones de neuronas corticales.
@@ -238,6 +240,8 @@ El material recibido contiene evidencia visual, pero no archivos de señal expor
 ```text
 Laboratorio 6/
 ├── README.md
+├── quiz-eeg-bitalino.md
+├── INFOGRAFÍA (2).jpeg
 └── evidencias/
     ├── registro-eeg-01.jpeg
     ├── registro-eeg-02.jpeg
