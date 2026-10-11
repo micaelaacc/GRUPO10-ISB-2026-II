@@ -62,3 +62,15 @@ En la Figura 4 se compara la señal ECG original con la señal contaminada artif
 Esta comparación evidencia la necesidad de aplicar técnicas de filtrado que permitan atenuar las interferencias introducidas y recuperar una señal lo más similar posible al ECG original, preservando sus características fisiológicas.
 
 # Filtrado
+
+<img width="1884" height="986" alt="image" src="https://github.com/user-attachments/assets/9070f6d8-554b-4358-b3c4-12afabe46bf1" />
+
+
+<img width="2230" height="1610" alt="image" src="https://github.com/user-attachments/assets/55e96cd5-fe02-4673-9456-c45b3d92c1e7" />
+
+<img width="1952" height="1020" alt="image" src="https://github.com/user-attachments/assets/7a8efffa-123f-4a9c-b33e-f195fc734a7d" />
+
+<img width="1962" height="1428" alt="image" src="https://github.com/user-attachments/assets/87cddceb-8929-4a78-90c8-0e811ccb7561" />
+
+<img width="1986" height="630" alt="image" src="https://github.com/user-attachments/assets/d7797af7-5144-4312-b119-3f05da15ea8e" />
+
