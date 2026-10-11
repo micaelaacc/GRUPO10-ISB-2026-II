@@ -16,9 +16,10 @@ Partimos utilizando el archivo *sampleECG.txt*, correspondiente a una señal ele
 
 <div align="center">
 
-
+<img width="1848" height="630" alt="fig1" src="https://github.com/user-attachments/assets/d08d94d1-8cfa-4657-a4b4-c9b9dd822c45" />
 **Figura 1.** Registro ECG original completo
 
+<img width="1862" height="634" alt="image" src="https://github.com/user-attachments/assets/0c1c8ff0-54a0-4844-a695-9a719948945b" />
 **Figura 2.** ventana de cuatro segundos para visualizar la morfología de los complejos QRS.
 
 </div>
