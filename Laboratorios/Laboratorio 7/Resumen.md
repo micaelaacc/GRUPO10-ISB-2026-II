@@ -41,6 +41,7 @@ La señal contaminada se obtuvo sumando estas tres componentes al ECG original.
 
 <div align="center">
 
+<img width="2118" height="1192" alt="image" src="https://github.com/user-attachments/assets/ff6763ea-03f8-431a-b1c9-47ec6d425311" />
 
 **Figura 3.** Componentes de ruido introducidos artificialmente: (a) interferencia sinusoidal de 60 Hz, (b) interferencia sinusoidal de 120 Hz y (c) ruido gaussiano.
 
