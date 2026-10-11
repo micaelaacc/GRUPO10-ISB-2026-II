@@ -5,9 +5,9 @@ El presente laboratorio se enfocó en la aplicación y comparación de diferente
 Para ello, se trabajó con una señal electrocardiográfica (ECG) adquirida en una sesión anterior mediante BITalino y OpenSignals, a la cual se añadieron artificialmente interferencias sinusoidales y ruido gaussiano. Posteriormente, se aplicaron diferentes técnicas de filtrado para evaluar su capacidad de recuperar la señal original.
 
 Se compararon tres enfoques: 
-- **Filtros convencionales:** filtros pasa-banda Butterworth y notch.
-- **Filtros adaptativos:** algoritmo Least Mean Squares (LMS).
-- **Transformada Wavelet:** descomposición multirresolución y reducción de ruido (denoising).
+- **Filtros convencionales:** Filtros pasa-banda Butterworth y notch.
+- **Filtros adaptativos:** Algoritmo Least Mean Squares (LMS).
+- **Transformada Wavelet:** Descomposición multirresolución y reducción de ruido (denoising).
 
 El procesamiento se desarrolló en Google Colab, utilizando Python. A continuación, se resume el procedimiento realizado y los principales resultados obtenidos. El notebook original, que incluye el código, las gráficas y los resultados completos, se encuentra disponible aquí.
 
@@ -22,8 +22,28 @@ Partimos utilizando el archivo *sampleECG.txt*, correspondiente a una señal ele
 
 <img width="1848" height="574" alt="image" src="https://github.com/user-attachments/assets/84527a83-3c9c-4181-990a-a16eb2c02b63" />
 
-**Figura 2.** ventana de cuatro segundos para visualizar la morfología de los complejos QRS.
+**Figura 2.** Ventana de cuatro segundos para visualizar la morfología de los complejos QRS.
 
 </div>
 
 En la Figura 1 se presenta el registro completo, de aproximadamente 22 segundos, donde se observa una sucesión de complejos QRS relativamente regulares. Para examinar mejor su morfología, en la Figura 2 se seleccionó una ventana de cuatro segundos, en la que se distinguen seis complejos QRS con deflexiones predominantemente negativas. A partir de estos, se estima por inspección una frecuencia cardíaca aproximada de 90 latidos por minuto, considerando un intervalo entre latidos cercano a 0.7 segundos.
+
+## Contaminación artificial de la señal
+Una vez obtenida la señal original, procedimos a contaminarla artificialmente mediante la incorporación de interferencias y ruido conocidos. El propósito de este procedimiento fue simular condiciones de adquisición menos favorables y, principalmente, contar con una señal de referencia que permitiera evaluar posteriormente qué tan eficazmente los diferentes métodos de filtrado recuperaban el ECG original.
+
+Para ello, se añadieron tres componentes:
+
+- **Interferencia sinusoidal de 60 Hz:** Simula la interferencia de la red eléctrica en Perú.
+- **Interferencia sinusoidal de 120 Hz:** Representa el segundo armónico de la frecuencia de red.
+- **Ruido gaussiano:** Simula perturbaciones aleatorias distribuidas en un amplio rango de frecuencias.
+
+La señal contaminada se obtuvo sumando estas tres componentes al ECG original.
+
+<div align="center">
+
+
+**Figura 3.** Componentes de ruido introducidos artificialmente: (a) interferencia sinusoidal de 60 Hz, (b) interferencia sinusoidal de 120 Hz y (c) ruido gaussiano.
+
+</div>
+
+Como se observa en la Figura 3, las dos interferencias sinusoidales presentan oscilaciones periódicas de amplitud constante. Sin embargo, la interferencia de 60 Hz (a) presenta menos oscilaciones por unidad de tiempo que la de 120 Hz (b), cuya frecuencia es el doble y corresponde al segundo armónico de la red eléctrica. Asimismo, se aprecia que la interferencia de 120 Hz tiene una amplitud menor que la de 60 Hz. En contraste, el ruido gaussiano (c) presenta fluctuaciones aleatorias alrededor de cero, sin una periodicidad definida y con amplitudes variables. A diferencia de las interferencias sinusoidales, que se concentran en frecuencias específicas, el ruido gaussiano simulado se distribuye en un amplio rango de frecuencias, lo que representa un desafío distinto para las técnicas de filtrado.
