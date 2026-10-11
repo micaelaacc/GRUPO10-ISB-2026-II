@@ -48,3 +48,16 @@ La señal contaminada se obtuvo sumando estas tres componentes al ECG original.
 </div>
 
 Como se observa en la Figura 3, las dos interferencias sinusoidales presentan oscilaciones periódicas de amplitud constante. Sin embargo, la interferencia de 60 Hz (a) presenta menos oscilaciones por unidad de tiempo que la de 120 Hz (b), cuya frecuencia es el doble y corresponde al segundo armónico de la red eléctrica. Asimismo, se aprecia que la interferencia de 120 Hz tiene una amplitud menor que la de 60 Hz. En contraste, el ruido gaussiano (c) presenta fluctuaciones aleatorias alrededor de cero, sin una periodicidad definida y con amplitudes variables. A diferencia de las interferencias sinusoidales, que se concentran en frecuencias específicas, el ruido gaussiano simulado se distribuye en un amplio rango de frecuencias, lo que representa un desafío distinto para las técnicas de filtrado.
+
+<div align="center">
+
+
+**Figura 4.** Comparación entre la señal ECG original y la señal contaminada artificialmente
+
+</div>
+
+En la Figura 4 se compara la señal ECG original con la señal contaminada artificialmente durante una ventana de cuatro segundos. Se observa que la incorporación de las interferencias genera numerosas oscilaciones rápidas superpuestas a la señal, alterando considerablemente su morfología. Aunque los complejos QRS continúan siendo identificables debido a sus deflexiones pronunciadas, las perturbaciones dificultan la distinción de componentes de menor amplitud, como las ondas P y T.
+
+Esta comparación evidencia la necesidad de aplicar técnicas de filtrado que permitan atenuar las interferencias introducidas y recuperar una señal lo más similar posible al ECG original, preservando sus características fisiológicas.
+
+# Filtrado
