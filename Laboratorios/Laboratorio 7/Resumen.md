@@ -51,6 +51,7 @@ Como se observa en la Figura 3, las dos interferencias sinusoidales presentan os
 
 <div align="center">
 
+<img width="1846" height="784" alt="image" src="https://github.com/user-attachments/assets/b5665bef-ecc9-48a8-a9d4-4fc0300446d1" />
 
 **Figura 4.** Comparación entre la señal ECG original y la señal contaminada artificialmente
 
