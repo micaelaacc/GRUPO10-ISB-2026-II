@@ -12,4 +12,15 @@ Se compararon tres enfoques:
 El procesamiento se desarrolló en Google Colab, utilizando Python. A continuación, se resume el procedimiento realizado y los principales resultados obtenidos. El notebook original, que incluye el código, las gráficas y los resultados completos, se encuentra disponible aquí.
 
 ## Señal ECG original
-![alt text](image.png)
+Partimos utilizando el archivo *sampleECG.txt*, correspondiente a una señal electrocardiográfica adquirida en una sesión anterior mediante BITalino (r)evolution y OpenSignals. Se extrajeron los datos del canal analógico A2, convirtiendo los valores digitales a milivoltios (mV) mediante la función de transferencia del sensor.
+
+<div align="center">
+
+
+**Figura 1.** Registro ECG original completo
+
+**Figura 2.** ventana de cuatro segundos para visualizar la morfología de los complejos QRS.
+
+</div>
+
+En la Figura 1 se presenta el registro completo, de aproximadamente 22 segundos, donde se observa una sucesión de complejos QRS relativamente regulares. Para examinar mejor su morfología, en la Figura 2 se seleccionó una ventana de cuatro segundos, en la que se distinguen seis complejos QRS con deflexiones predominantemente negativas. A partir de estos, se estima por inspección una frecuencia cardíaca aproximada de 90 latidos por minuto, considerando un intervalo entre latidos cercano a 0.7 segundos.
