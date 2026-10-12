@@ -9,7 +9,7 @@ Se compararon tres enfoques:
 - **Filtros adaptativos:** Algoritmo Least Mean Squares (LMS).
 - **Transformada Wavelet:** Descomposición multirresolución y reducción de ruido (denoising).
 
-El procesamiento se desarrolló en Google Colab, utilizando Python. A continuación, se resume el procedimiento realizado y los principales resultados obtenidos. El notebook original, que incluye el código, las gráficas y los resultados completos, se encuentra disponible [aquí](Laboratorios/Laboratorio%207/LAB7_Filtrado_Adaptativo_Wavelet_ECG.ipynb).
+El procesamiento se desarrolló en Google Colab, utilizando Python. A continuación, se resume el procedimiento realizado y los principales resultados obtenidos. El notebook original, que incluye el código, las gráficas y los resultados completos, se encuentra disponible [aquí](LAB7_Filtrado_Adaptativo_Wavelet_ECG.ipynb).
 
 ## Señal ECG original
 Partimos utilizando el archivo *sampleECG.txt*, correspondiente a una señal electrocardiográfica adquirida en una sesión anterior mediante BITalino (r)evolution y OpenSignals. Se extrajeron los datos del canal analógico A2, convirtiendo los valores digitales a milivoltios (mV) mediante la función de transferencia del sensor.
